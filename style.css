@@ -1,0 +1,230 @@
+.box-1{                 
+    margin-right: 55%;
+}
+
+.box-2{
+    display: block;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 15rem;
+    margin: 0 auto;
+    margin-right: 28%;
+}
+
+.box-3{   
+    display: block;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#text{
+    width: 20%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+  
+.sizing{
+    display: block;
+    margin-right: 33%;
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.generate_QR_Size {
+    display: block;
+    margin-left: 33%;
+    height: 350px;
+    width: 350px;
+
+}
+
+.btn_prop1{
+    display: block;
+    width: 20rem;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-top: 0.1px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.btn_prop2{
+    display: block;
+    width: 20rem;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+#label{
+    display: block;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 9em;
+    margin-left: 90%;
+}
+  
+.header_bg {
+    display: block;
+    background-color: rgb(238, 205, 114);
+    width: 30%;
+    height: 65px;
+    margin: 5px auto;
+    border-radius: 4px;
+    border: solid black 4.5px;
+    margin-top: 35px;
+    
+}
+
+.header {
+     color: rgb(252, 5, 5);
+     text-align: center;
+     margin-top: 1em;
+     margin-bottom: 1em;
+     font-size: 23px;
+     font-weight: bold;
+}
+
+#body{
+    background-image: url(picture_1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+#container{          
+    background-color: rgb(231, 203, 108);
+    border: 5px solid;
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 13px;
+    border-radius: 15px;
+    margin-top: 0.01rem;
+}
+
+.input_prop{
+    margin-bottom: 6rem;
+}
+
+.icon_prop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 20%;
+}
+
+/* Delete Buton CSS */
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.delete_Button_Sizing {
+margin-top: 0;
+}
