@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+      <title>QR Code Generator</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    </head>
+
+    <body id="body">
+    
+      <header class="header_bg">
+        <h1 class="header">QR Code Generator</h1>
+      </header>
+
+      <div id="container">
+        <div class="input-group-prepend box-1"></div>
+       
+        <i class="fa fa-hand-o-down icon_prop" style="font-size:48px;color:rgb(89, 152, 224);margin-top:30px;"></i>
+        <i class="fa fa-hand-o-down icon_prop" style="font-size:48px;color:rgb(89, 152, 224);margin-top:30px;align-items: end;"></i>
+        <i class="fa fa-hand-o-down icon_prop" style="font-size:48px;color:rgb(89, 152, 224);margin-top:30px;"></i>
+
+          <div class="input-group mb-3 box-3" style="width: 600px;">
+            <div class="input-group-prepend"></div>      
+            <input id="inputText" placeholder="Enter URL or Text" +
+            onblur='generateBarCode();' type="text" class="form-control input_prop" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+            
+          </div>
+
+          <div class="delete_Button_Sizing">
+            <button class="button-82-pushable" role="button" onclick="clean_Content();" type="reset">
+              <span class="button-82-shadow"></span>
+              <span class="button-82-edge"></span>
+              <span class="button-82-front text">
+                Delete
+              </span>
+            </button>
+          </div>
+
+          
+
+          <div id="qrCodeContainer" class="sizing generate_QR_Size">
+            <img id='barcode' class="sizing" + 
+            src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" + 
+            alt="It's not QR code generation" +
+            title="Hello" +
+            >
+          </div>
+   
+          <br>
+
+          <center><button onclick="generateQRCode()" type="button" class="btn btn-primary btn_prop1">Generate</button></center>
+          <center><button onclick="downloadQRCode()" type="button" class="btn btn-success btn_prop2">Download</button></center>
+          
+      </div>
+
+    </body>
+
+</html>
